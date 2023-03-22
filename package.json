@@ -1,0 +1,24 @@
+{
+  "name": "action_validator",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Stimulus controller for the action_validator gem",
+  "exports": {
+    "require": "./dist/action_validator.cjs",
+    "default": "./dist/action_validator.modern.js"
+  },
+  "source": "src/action_validator.js",
+  "main": "./dist/action_validator.cjs",
+  "module": "./dist/action_validator.js",
+  "unpkg": "./dist/action_validator.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "dependencies": {
+    "@hotwired/stimulus": "^3.2.1",
+    "@rails/actioncable": "^7.0.4"
+  },
+  "author": "darin.haener@hey.com",
+  "license": "MIT"
+}
