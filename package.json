@@ -1,7 +1,7 @@
 {
   "name": "action_validator",
   "type": "module",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "Stimulus controller for the action_validator gem",
   "exports": {
     "require": "./dist/action_validator.cjs",
