@@ -1,5 +1,5 @@
 {
-  "name": "action_validator",
+  "name": "@dphaener/action_validator",
   "type": "module",
   "version": "0.0.0",
   "description": "Stimulus controller for the action_validator gem",
