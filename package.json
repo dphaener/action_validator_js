@@ -13,7 +13,8 @@
   "unpkg": "./dist/action_validator.umd.js",
   "scripts": {
     "build": "microbundle",
-    "dev": "microbundle watch"
+    "dev": "microbundle watch",
+    "test": "echo \"No tests yet\""
   },
   "dependencies": {
     "@hotwired/stimulus": "^3.2.1",
