@@ -19,6 +19,6 @@
     "@hotwired/stimulus": "^3.2.1",
     "@rails/actioncable": "^7.0.4"
   },
-  "author": "darin.haener@hey.com",
+  "author": "Darin Haener <darin.haener@hey.com>",
   "license": "MIT"
 }
