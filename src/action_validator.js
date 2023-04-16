@@ -3,14 +3,11 @@ import { createConsumer } from "@rails/actioncable"
 
 export default class extends Controller {
   static targets = ['submit', 'input', 'error', 'baseErrors'];
-  static values = { modelName: String };
 
   connect() {
     this.consumer = createConsumer()
     this.inputs = {};
     this.channel = this.consumer.subscriptions.create('ActionValidator::FormChannel', {
-      connected: this.#cableConnected.bind(this),
-      disconnected: this.#cableDisconnected.bind(this),
       received: this.#cableReceived.bind(this),
     });
 
@@ -118,14 +115,6 @@ export default class extends Controller {
 
   #enableSubmit() {
     if (this.hasSubmitTarget) this.submitTarget.removeAttribute('disabled');
-  }
-
-  #cableConnected() {
-    console.log('Connected to cable');
-  }
-
-  #cableDisconnected() {
-    console.log('Disconnected from cable');
   }
 }
 
